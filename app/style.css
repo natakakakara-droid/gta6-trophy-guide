@@ -1,7 +1,48 @@
-body { font-family: Arial, sans-serif; margin: 24px; color: #222; }
-header { display: flex; justify-content: space-between; align-items: baseline; }
-.controls { display: flex; gap: 16px; margin: 12px 0; align-items: center; }
-.import input { font-size: 12px; }
-table { border-collapse: collapse; width: 100%; }
-th, td { border-bottom: 1px solid #ddd; padding: 6px 8px; text-align: left; vertical-align: top; white-space: pre-line; }
-th { background: #f2f2f2; }
+/* Leonida Legend — own look: warm sunset amber on deep plum, no game artwork. */
+* { box-sizing: border-box; }
+body { font-family: "Segoe UI", Arial, Helvetica, sans-serif; margin: 0; color: #241a2e; background: #f7f1ea; line-height: 1.5; }
+.hero { background: linear-gradient(135deg, #2b0f3a 0%, #5b1a4d 55%, #b34a2e 100%); color: #fff; padding: 28px 24px 24px; }
+.kicker { margin: 0 0 6px; text-transform: uppercase; letter-spacing: .14em; font-size: 12px; color: #ffd9a0; }
+.hero h1 { margin: 0 0 6px; font-size: 44px; line-height: 1.05; }
+.sub { margin: 0 0 16px; font-size: 17px; max-width: 720px; color: #ffe9d6; }
+.progress-wrap { max-width: 720px; }
+.progress-bar { height: 14px; background: rgba(255,255,255,.25); border-radius: 8px; overflow: hidden; }
+.progress-fill { height: 100%; background: #ffb347; border-radius: 8px; transition: width .2s; }
+.progress-text { margin: 6px 0 0; font-weight: 700; }
+.counts { margin: 8px 0 0; font-size: 14px; color: #ffe9d6; }
+.roadmap { background: #fff; margin: 16px 24px 0; padding: 18px 20px; border: 1px solid #e8dccf; border-left: 6px solid #b34a2e; border-radius: 8px; }
+.roadmap h2 { margin: 0 0 10px; font-size: 21px; }
+.stages { margin: 0 0 10px; padding-left: 22px; }
+.stages li { margin-bottom: 6px; }
+.warning { background: #fff3e0; border: 1px solid #f0c98a; border-radius: 6px; padding: 10px 12px; }
+.note { font-size: 14px; color: #5a4a63; }
+.controls { display: flex; flex-wrap: wrap; gap: 12px 18px; align-items: center; margin: 16px 24px 0; background: #fff; border: 1px solid #e8dccf; border-radius: 8px; padding: 12px 16px; }
+.controls label { font-weight: 600; font-size: 14px; }
+.controls input[type="search"], .controls select { font: inherit; font-weight: 400; padding: 6px 8px; border: 1px solid #c9b8a8; border-radius: 6px; background: #fff; }
+.controls button, .import { font: inherit; font-weight: 700; padding: 7px 12px; border-radius: 6px; border: 1px solid #5b1a4d; background: #5b1a4d; color: #fff; cursor: pointer; }
+.controls button:hover, .import:hover { background: #7a2568; }
+.import input { display: none; }
+.showing { margin: 12px 24px 0; font-size: 14px; color: #5a4a63; }
+.list { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 14px; padding: 12px 24px 24px; }
+.card { background: #fff; border: 1px solid #e8dccf; border-radius: 10px; padding: 14px 16px; }
+.card.earned { border-color: #2e7d32; background: #f4faf4; }
+.card-top { display: flex; gap: 10px; align-items: flex-start; }
+.card-top input[type="checkbox"] { width: 22px; height: 22px; margin-top: 2px; accent-color: #2e7d32; flex: none; cursor: pointer; }
+.card h3 { margin: 0; font-size: 18px; line-height: 1.25; }
+.desc { margin: 4px 0 8px; font-style: italic; color: #4d3f57; }
+.badge { display: inline-block; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; padding: 2px 8px; border-radius: 20px; margin-left: 6px; vertical-align: middle; white-space: nowrap; }
+.badge.platinum { background: #cfe8ff; color: #0b4a7a; }
+.badge.gold { background: #ffe08a; color: #6d4c00; }
+.badge.silver { background: #e3e6ea; color: #37414f; }
+.badge.bronze { background: #f0d3b3; color: #6b3a12; }
+.tag { display: inline-block; font-size: 12px; font-weight: 700; padding: 1px 8px; border-radius: 20px; background: #efe6f2; color: #5b1a4d; margin: 0 4px 4px 0; }
+.tag.missable { background: #fde2e2; color: #8f1d1d; }
+.guide { margin: 8px 0; font-size: 15px; }
+.guide strong { color: #8f1d1d; }
+.sources { margin: 8px 0 0; font-size: 13px; color: #5a4a63; }
+.sources a { color: #5b1a4d; }
+.hidden-note { margin: 8px 0; color: #5a4a63; font-style: italic; }
+.meta { font-size: 13px; color: #5a4a63; margin-top: 8px; }
+.empty { margin: 24px; font-size: 16px; }
+footer { margin: 0 24px 28px; font-size: 13px; color: #5a4a63; }
+footer a { color: #5b1a4d; }

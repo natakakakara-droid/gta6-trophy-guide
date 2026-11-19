@@ -1,5 +1,1 @@
-[
-  { "file": "1-checklist.jpg", "path": "/", "viewport": { "width": 1280, "height": 800 } },
-  { "file": "2-silver.jpg", "path": "/", "grade": "silver", "viewport": { "width": 1280, "height": 800 } },
-  { "file": "3-bronze.jpg", "path": "/", "grade": "bronze", "scroll": 1400, "viewport": { "width": 1280, "height": 800 } }
-]
+[{"file":"1-checklist.jpg","note":"Cover: checklist with official names, descriptions, grades, guides and sources; three trophies earned so the progress bar and revealed cards show.","path":"/?spoiler=off&earned=1,2,3&open=1","viewport":{"height":800,"width":1280}},{"file":"2-guide.jpg","note":"Positive Mental Attitude open: the missable flag, its full guide and its sources.","path":"/?spoiler=off&open=28","viewport":{"height":800,"width":1280}},{"file":"3-silver.jpg","note":"Silver grade filter: all six silver trophies, scrolled to the first one.","path":"/?spoiler=off&grade=silver&open=15","viewport":{"height":800,"width":1280}},{"file":"4-roadmap.jpg","note":"Top of the page with the default spoiler setting on: hero, platinum roadmap, the missable warning and the controls.","path":"/","viewport":{"height":800,"width":1280}}]

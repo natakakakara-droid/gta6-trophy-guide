@@ -3,23 +3,51 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GTA VI trophy checklist</title>
+<title>Leonida Legend — GTA VI Trophy Guide &amp; Tracker</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <h1>GTA VI trophy checklist</h1>
-  <p id="progress">0 of 55 earned</p>
+<header class="hero">
+  <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies &middot; fully offline</p>
+  <h1>Leonida Legend</h1>
+  <p class="sub">Every GTA VI trophy, with a guide in our own words, its sources, a saved checklist and a road to the platinum.</p>
+  <div class="progress-wrap" aria-label="Progress">
+    <div class="progress-bar"><div id="bar" class="progress-fill" style="width:0%"></div></div>
+    <p id="progress" class="progress-text">0 of 55 earned &middot; 0%</p>
+  </div>
+  <p id="counts" class="counts"></p>
 </header>
+
+<section class="roadmap" id="roadmap" aria-label="Platinum roadmap">
+  <h2>Road to the Platinum &mdash; about 200 hours, difficulty 4/10</h2>
+  <ol class="stages">
+    <li><strong>Stage 1 &mdash; Story (Chapters 1&ndash;5).</strong> Play the story straight through. Earn the 13 story trophies, including the gold for the final mission.</li>
+    <li><strong>Stage 2 &mdash; Stranger questlines.</strong> Finish the Andy, Kenton, Billy, Randy and Tyrone strands, plus 8 counted stranger strands for Strangers &amp; Freaks.</li>
+    <li><strong>Stage 3 &mdash; Activities.</strong> Shooting ranges (42 golds), drone races, races, stunts, challenges and the partner trophies.</li>
+    <li><strong>Stage 4 &mdash; Collectibles.</strong> WAiNK scans, card sets, vehicles, garages, meditation spots and exploring all of Leonida.</li>
+    <li><strong>Stage 5 &mdash; Cleanup &amp; 100%.</strong> After the story, the 100% Completion checklist unlocks (Progress &gt; Stats &gt; 100% Completion). Finish it for the gold A Long Road, then the platinum pops.</li>
+  </ol>
+  <p class="warning"><strong>Only one trophy can be missed: Positive Mental Attitude.</strong> Meditate on the Chapter 1 balcony at Jason&rsquo;s house (after Down to Earth, follow Lucia in the morning and Accept). There is no mission replay and no New Game Plus, so keep a manual save at the start and end of every chapter. Cheats disable trophies and saving.</p>
+  <p class="note">Guides draw on PowerPyx, Keengamer and Output Lag (named beside each trophy) and on the Exophase and PSNProfiles trophy lists for the official names, descriptions and grades. Five methods are still unconfirmed by those sources and are marked as such in their guides.</p>
+</section>
+
 <div class="controls">
-  <label>Grade <select id="grade"><option value="all">All</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+  <label>Search <input id="search" type="search" placeholder="Trophy name or word&hellip;" autocomplete="off"></label>
+  <label>Kind <select id="kind"><option value="all">All kinds</option><option value="story">Story</option><option value="missable">Missable</option><option value="collectibles">Collectibles</option><option value="activities">Activities</option><option value="online">Online (0)</option><option value="platinum">Platinum</option></select></label>
+  <label>Grade <select id="grade"><option value="all">All grades</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+  <label class="check"><input id="spoiler" type="checkbox" checked> Hide story spoilers until earned</label>
+  <label class="check"><input id="earnedOnly" type="checkbox"> Earned only</label>
   <button id="export" type="button">Export progress</button>
-  <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+  <label class="import">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+  <button id="reset" type="button">Reset</button>
 </div>
-<table>
-  <thead><tr><th>Earned</th><th>Trophy</th><th>Grade</th><th>How to get it</th></tr></thead>
-  <tbody id="rows"></tbody>
-</table>
+<p id="showing" class="showing"></p>
+<main id="list" class="list"></main>
+<p id="empty" class="empty" hidden>No trophies match these filters.</p>
+<footer>
+  <p>Official trophy names, descriptions and grades as PlayStation publishes them. Guides are written for this entry in our own words; each one names its sources. No Rockstar Games logo or artwork is used. Works offline &mdash; nothing is loaded from the network.</p>
+  <p>Sources: <a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">PowerPyx</a> &middot; <a href="https://www.keengamer.com/articles/guides/gta-6-trophy-guide-platinum-roadmap-all-55-trophies/">Keengamer</a> &middot; <a href="https://outputlag.com/guides/gta-6-trophy-list/">Output Lag</a> &middot; Exophase &middot; PSNProfiles</p>
+</footer>
 <script type="module" src="app.js"></script>
 </body>
 </html>

@@ -1,3 +1,7 @@
+// Leonida Legend — this entry's hand-in: the GTA VI trophy guide and tracker in app/ (all 55 trophies
+// with authored guides, sources, saved checklist, filters and spoiler setting) plus its screenshots.
+// The entry is handed in exactly as the starter's main.ts does it: copy app/ and screenshots/ to the
+// output directory and write dossier.json with the vendored make.fun library, unchanged.
 // A working gta6-trophy-guide-01 entry (Node 22, standard library only): the guide is this directory's app/ folder,
 // plain static files a browser opens at app/index.html (ES modules, CSS, no build step), offline: it loads nothing
 // over the network, and its trophy list and guides are app/data/trophies.json. The program hands it in: it copies app/
